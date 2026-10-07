@@ -6,12 +6,14 @@ import { whatsappUrl } from "@/data/site";
 export function Hero() {
   return (
     <section id="inicio" aria-labelledby="hero-title" className="hero-stage relative h-[135svh] scroll-mt-20">
-      <div className="sticky top-0 isolate flex h-svh min-h-[680px] items-end overflow-hidden pt-32 pb-12 lg:pt-40 lg:pb-16">
-        <Image src="/assets/foto-1.webp" alt="Pessoa treinando levantamento de peso em academia" fill priority sizes="100vw" className="hero-media -z-30 object-cover object-[62%_center] saturate-75" />
+      <div data-hero-sticky className="sticky top-0 isolate flex h-svh min-h-[680px] items-end overflow-hidden pt-32 pb-12 lg:pt-40 lg:pb-16">
+        <div className="absolute inset-0 -z-30">
+          <Image src="/assets/foto-1.webp" alt="Pessoa treinando levantamento de peso em academia" fill priority sizes="100vw" className="hero-media object-cover object-[62%_center] saturate-75" />
+        </div>
         <div className="absolute inset-0 -z-10 bg-background/72" />
         <div className="absolute inset-y-0 left-0 -z-10 w-full bg-background/45 lg:w-3/5" />
         <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-background/55 to-transparent" />
-        <div className="relative mx-auto grid w-full max-w-6xl items-end gap-10 px-4 sm:px-6 lg:grid-cols-[1.45fr_.55fr]">
+        <div className="hero-content relative mx-auto grid w-full max-w-6xl items-end gap-10 px-4 sm:px-6 lg:grid-cols-[1.45fr_.55fr]">
           <div className="hero-copy max-w-4xl">
           <p className="mb-6 flex items-center gap-2 text-xs font-bold tracking-[.12em] uppercase"><MapPin className="size-4 text-primary" /> Nova Iguaçu, RJ</p>
           <h1 id="hero-title" className="font-display text-5xl font-black leading-[.86] tracking-[-.035em] uppercase sm:text-7xl lg:text-8xl">
