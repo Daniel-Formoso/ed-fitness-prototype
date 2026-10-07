@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "title": "Design System: Ed Fitness",
+  "platform": "web",
+  "entrypoint": "DESIGN.md",
+  "sources": {
+    "product": "PRODUCT.md",
+    "designSystem": "design-system.md",
+    "tokens": "theme.tokens.css",
+    "direction": ".impeccable/direction.md"
+  }
+}
