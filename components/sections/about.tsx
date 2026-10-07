@@ -26,12 +26,10 @@ export function About() {
             {benefits.map(([title, text]) => <div key={title} className="grid grid-cols-[28px_1fr] gap-3 border-b py-5"><Check className="mt-0.5 size-5 text-green-400" /><div><h3 className="font-bold">{title}</h3><p className="mt-1 text-sm leading-relaxed text-muted-foreground">{text}</p></div></div>)}
           </div>
         </div>
-        <figure className="relative mt-4 overflow-hidden border bg-black">
-          <video controls preload="metadata" poster="/assets/video/poster-video.webp" className="aspect-video w-full object-cover" aria-label="Vídeo ilustrativo de uma experiência de treino em academia">
-            <source src="/assets/video/video-academia.mp4" type="video/mp4" />
-            Seu navegador não oferece suporte a vídeo.
-          </video>
-          <figcaption className="absolute bottom-4 left-4 bg-background/85 px-3 py-2 text-xs text-muted-foreground">Vídeo ilustrativo do protótipo.</figcaption>
+        <figure className="group relative mt-4 aspect-video overflow-hidden border bg-black">
+          <Image src="/assets/foto-7.webp" alt="Estrutura de musculação de uma academia" fill sizes="(min-width: 1280px) 1152px, 100vw" className="object-cover object-center saturate-75 transition-[transform,filter] duration-500 group-hover:scale-[1.02] group-hover:saturate-100" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <figcaption className="absolute bottom-4 left-4 bg-background/85 px-3 py-2 text-xs text-muted-foreground">Imagem ilustrativa do protótipo.</figcaption>
         </figure>
       </div>
     </section>

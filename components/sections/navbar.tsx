@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu } from "lucide-react";
 import { SiteLogo } from "@/components/site-logo";
 import { buttonVariants } from "@/components/ui/button";
@@ -7,8 +8,17 @@ import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTi
 import { siteConfig, whatsappUrl } from "@/data/site";
 
 export function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const updateSurface = () => setScrolled(window.scrollY > 48);
+    updateSurface();
+    window.addEventListener("scroll", updateSurface, { passive: true });
+    return () => window.removeEventListener("scroll", updateSurface);
+  }, []);
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 h-20 border-b bg-background/90 backdrop-blur-xl">
+    <header data-scrolled={scrolled} className="site-header fixed inset-x-0 top-0 z-50 h-20 border-b border-transparent bg-transparent transition-[background-color,border-color,box-shadow] duration-200">
       <div className="mx-auto flex h-full max-w-6xl items-center justify-between gap-8 px-4 sm:px-6">
         <SiteLogo />
         <nav aria-label="Navegação principal" className="ml-auto hidden items-center gap-8 lg:flex">

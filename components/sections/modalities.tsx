@@ -15,7 +15,7 @@ export function Modalities() {
         <div className="mt-12 grid border-t border-l border-paper-foreground/20 sm:grid-cols-2 lg:grid-cols-3">
           {siteConfig.modalities.map(([name, detail], index) => {
             const Icon = icons[index];
-            return <article key={name} className="min-h-40 border-r border-b border-paper-foreground/20 p-6"><Icon className="size-6 text-primary" /><h3 className="mt-10 font-display text-2xl font-bold uppercase">{name}</h3><p className="mt-2 text-sm text-paper-muted">{detail}</p></article>;
+            return <article key={name} data-reveal style={{ "--reveal-delay": `${(index % 3) * 80}ms` } as React.CSSProperties} className="modality-card min-h-40 border-r border-b border-paper-foreground/20 p-6"><Icon className="modality-card__icon size-6 text-primary" /><h3 className="mt-10 font-display text-2xl font-bold uppercase">{name}</h3><p className="mt-2 text-sm text-paper-muted">{detail}</p></article>;
           })}
         </div>
       </div>
