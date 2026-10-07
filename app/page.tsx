@@ -9,6 +9,7 @@ import { Navbar } from "@/components/sections/navbar";
 import { Plans } from "@/components/sections/plans";
 import { SocialProof } from "@/components/sections/social-proof";
 import { MotionController } from "@/components/motion/motion-controller";
+import { WhatsAppFloating } from "@/components/whatsapp-floating";
 import { siteConfig } from "@/data/site";
 
 export default function Page() {
@@ -43,6 +44,7 @@ export default function Page() {
         <FinalCta />
       </main>
       <Footer />
+      <WhatsAppFloating />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     </>
   );

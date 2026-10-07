@@ -24,6 +24,7 @@
   --border: rgb(255 255 255 / 12%);
   --input: rgb(255 255 255 / 16%);
   --ring: #ff8a96;
+  --success: #14803d;
   --paper: #f3f1eb;
   --paper-foreground: #0a0c22;
   --paper-muted: #55596f;
@@ -62,6 +63,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-success: var(--success);
   --font-sans: var(--font-inter);
   --font-display: var(--font-archivo);
   --color-paper: var(--paper);
