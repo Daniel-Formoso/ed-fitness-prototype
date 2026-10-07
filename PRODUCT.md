@@ -24,7 +24,8 @@ O visitante normalmente acessa pelo celular, compara estrutura, modalidades, hor
 
 ## Capabilities and Constraints
 
-- Site de apresentação responsivo em React 19, Vite 6 e styled-components.
+- Site de apresentação responsivo em Next.js (App Router), React, TypeScript e Tailwind CSS v4.
+- Componentes interativos acessíveis construídos com shadcn/ui e primitivas Radix/Base UI.
 - Navegação por âncoras dentro de uma landing page.
 - Galeria, vídeo, apresentação de modalidades, planos e contato.
 - O protótipo deve substituir a identidade e o conteúdo da Elite Gym pela Ed Fitness.

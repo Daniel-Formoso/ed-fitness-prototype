@@ -51,6 +51,10 @@ components:
 
 # Design System: Ed Fitness
 
+## Implementation
+
+O sistema é aplicado em Next.js App Router com TypeScript e Tailwind CSS v4. Tokens globais vivem em `app/globals.css`, o conteúdo factual fica centralizado em `data/site.ts` e os componentes interativos seguem os padrões de acessibilidade do shadcn/ui. Ícones de interface usam Lucide React.
+
 ## Overview
 
 **Creative North Star: "Energia Editorial"**
