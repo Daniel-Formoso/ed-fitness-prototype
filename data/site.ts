@@ -26,13 +26,49 @@ export const siteConfig = {
   modalities: [
     ["Musculação", "Força e condicionamento"],
     ["Cardio", "Resistência e energia"],
+    ["Pilates", "Controle e mobilidade"],
     ["Bike", "Aulas coletivas"],
     ["Ritmos", "Movimento e diversão"],
     ["Localizada", "Treino coletivo"],
-    ["Pilates", "Controle e mobilidade"],
     ["Jiu-Jitsu", "Técnica e disciplina"],
     ["Judô", "Esporte e evolução"],
     ["Muay Thai", "Potência e foco"],
+  ],
+  // TODO: confirmar com a academia a grade oficial de terça a sexta antes da publicação.
+  classSchedule: [
+    { key: "seg", short: "Seg", label: "Segunda", classes: [
+      { time: "07h00", name: "Bike", period: "Manhã" },
+      { time: "07h30", name: "Bike", period: "Manhã" },
+      { time: "08h00", name: "Localizada", period: "Manhã" },
+      { time: "08h30", name: "Bike", period: "Manhã" },
+      { time: "18h20", name: "Bike", period: "Noite" },
+      { time: "19h40", name: "Bike", period: "Noite" },
+    ] },
+    { key: "ter", short: "Ter", label: "Terça", classes: [
+      { time: "07h00", name: "Ritmos", period: "Manhã" },
+      { time: "08h00", name: "Localizada", period: "Manhã" },
+      { time: "18h20", name: "Ritmos", period: "Noite" },
+      { time: "19h40", name: "Localizada", period: "Noite" },
+    ] },
+    { key: "qua", short: "Qua", label: "Quarta", classes: [
+      { time: "07h00", name: "Bike", period: "Manhã" },
+      { time: "07h30", name: "Bike", period: "Manhã" },
+      { time: "08h00", name: "Localizada", period: "Manhã" },
+      { time: "18h20", name: "Bike", period: "Noite" },
+      { time: "19h40", name: "Bike", period: "Noite" },
+    ] },
+    { key: "qui", short: "Qui", label: "Quinta", classes: [
+      { time: "07h00", name: "Ritmos", period: "Manhã" },
+      { time: "08h00", name: "Localizada", period: "Manhã" },
+      { time: "18h20", name: "Ritmos", period: "Noite" },
+      { time: "19h40", name: "Localizada", period: "Noite" },
+    ] },
+    { key: "sex", short: "Sex", label: "Sexta", classes: [
+      { time: "07h00", name: "Bike", period: "Manhã" },
+      { time: "08h00", name: "Localizada", period: "Manhã" },
+      { time: "18h20", name: "Bike", period: "Noite" },
+      { time: "19h40", name: "Ritmos", period: "Noite" },
+    ] },
   ],
   plans: [
     { name: "Anual", price: "99,90", detail: "12 parcelas de R$ 99,90", featured: true },
