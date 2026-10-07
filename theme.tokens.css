@@ -1,0 +1,57 @@
+/*
+ * Ed Fitness — tokens independentes de framework.
+ * Referência medida em https://pallmfour.com.br/edfitness/
+ * Integração Tailwind pendente de confirmação da versão (v3 ou v4).
+ */
+
+:root {
+  color-scheme: dark;
+
+  --font-display: "Archivo", Arial, Helvetica, sans-serif;
+  --font-sans: "Inter", Arial, Helvetica, sans-serif;
+
+  --color-background: #0a0c22;
+  --color-background-subtle: #10132f;
+  --color-card: #151938;
+  --color-card-strong: #1a1d48;
+  --color-secondary: #262a64;
+  --color-overlay: rgba(10, 12, 34, 0.78);
+
+  --color-foreground: #ffffff;
+  --color-muted-foreground: #aeb2d6;
+  --color-subtle-foreground: #d3d6f0;
+  --color-disabled-foreground: rgba(255, 255, 255, 0.55);
+
+  --color-brand: #ed1930;
+  --color-primary: #d9142e;
+  --color-primary-foreground: #ffffff;
+  --color-brand-soft: #ff8a96;
+  --color-brand-subtle: #ffd5da;
+  --color-brand-tint: rgba(237, 25, 48, 0.13);
+
+  --color-success-original: #1da851;
+  --color-success: #14803d;
+  --color-success-foreground: #ffffff;
+  --color-destructive: #d9142e;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-border-strong: rgba(255, 255, 255, 0.28);
+  --color-ring: #ff8a96;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 999px;
+
+  --shadow-card: 0 10px 30px -18px rgba(0, 0, 0, 0.55),
+    0 2px 8px rgba(0, 0, 0, 0.18);
+  --shadow-card-hover: 0 18px 42px -20px rgba(0, 0, 0, 0.68),
+    0 6px 16px rgba(0, 0, 0, 0.22);
+  --shadow-primary: 0 12px 30px -10px rgba(217, 20, 46, 0.55),
+    0 4px 12px rgba(217, 20, 46, 0.22);
+  --shadow-modal: 0 28px 80px -24px rgba(0, 0, 0, 0.78),
+    0 10px 28px rgba(0, 0, 0, 0.32);
+}
