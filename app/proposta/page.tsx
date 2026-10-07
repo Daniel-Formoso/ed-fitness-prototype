@@ -214,7 +214,7 @@ export default function ProposalPage() {
                 Escolha o nível de autonomia da nova estrutura.
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper-muted">
-                O desenvolvimento é um investimento único. A diferença entre os planos está na forma como o conteúdo será atualizado depois da publicação.
+                O desenvolvimento é um investimento único. A diferença entre os planos está na forma como o conteúdo será atualizado depois da publicação; hospedagem e suporte recorrente são contratados separadamente.
               </p>
             </div>
 
@@ -238,8 +238,8 @@ export default function ProposalPage() {
         <section aria-labelledby="monthly-title" className="bg-secondary py-20 text-foreground md:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr] lg:items-end lg:gap-20">
-              <h2 id="monthly-title" className="font-display text-4xl font-black leading-[.95] tracking-[-0.03em] uppercase sm:text-5xl">Suporte para manter e acelerar.</h2>
-              <p className="max-w-2xl leading-relaxed text-secondary-foreground/75">A gestão mensal é opcional e começa somente após a publicação. Ela mantém a infraestrutura estável ou amplia o projeto com captação automatizada.</p>
+              <h2 id="monthly-title" className="font-display text-4xl font-black leading-[.95] tracking-[-0.03em] uppercase sm:text-5xl">Infraestrutura e atendimento que continuam trabalhando.</h2>
+              <p className="max-w-2xl leading-relaxed text-secondary-foreground/75">A gestão mensal é opcional e começa somente após a publicação. Ela mantém a infraestrutura estável ou inclui um bot de atendimento no WhatsApp para responder, organizar e encaminhar novos contatos.</p>
             </div>
 
             <div className="mt-14 grid border-t border-white/20 lg:grid-cols-2">
@@ -258,6 +258,9 @@ export default function ProposalPage() {
                 </article>
               ))}
             </div>
+            <p className="mt-8 max-w-3xl text-sm leading-relaxed text-secondary-foreground/65">
+              O bot atende as dúvidas e faz a triagem inicial; negociações, exceções e a confirmação de matrícula continuam sob responsabilidade da recepção. Integrações pagas de terceiros, como API oficial do WhatsApp, são contratadas diretamente pela academia quando necessárias.
+            </p>
           </div>
         </section>
 
