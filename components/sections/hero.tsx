@@ -11,7 +11,7 @@ export function Hero() {
           <Image src="/assets/foto-1.webp" alt="Pessoa treinando levantamento de peso em academia" fill priority sizes="100vw" className="hero-media object-cover object-[62%_center] saturate-75" />
         </div>
         <div className="absolute inset-0 -z-10 bg-background/72" />
-        <div className="absolute inset-y-0 left-0 -z-10 w-full bg-background/45 lg:w-3/5" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/50 via-background/20 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-background/55 to-transparent" />
         <div className="hero-content relative mx-auto grid w-full max-w-6xl items-end gap-10 px-4 sm:px-6 lg:grid-cols-[1.45fr_.55fr]">
           <div className="hero-copy max-w-4xl">
